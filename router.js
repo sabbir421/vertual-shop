@@ -6,5 +6,5 @@ router.get("/health", (req, res) => {
   res.send("shehab you can do it");
 });
 //// user route///
-router.post("/signup", signup);
+// router.post("/signup", signup);
 module.exports = router;

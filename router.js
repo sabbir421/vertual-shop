@@ -1,4 +1,6 @@
+const { generateDescription } = require("./controller/mocController/chatGPT");
 const { signup } = require("./controller/userController/userController");
+const { doesExists } = require("./model/userModel/userModel");
 
 const router = require("express").Router();
 
@@ -7,4 +9,5 @@ router.get("/health", (req, res) => {
 });
 // user route///
 router.post("/signup", signup);
+router.post("/description", generateDescription);
 module.exports = router;
